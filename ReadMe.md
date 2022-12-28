@@ -9,7 +9,7 @@ lua >= 5.1
   
 ## 快捷键  
 
-可以在[keybindings.lua](./nvim/keybindings.lua)里面看到  
+可以在[keybindings.lua](./nvim/lua/keybindings.lua)里面看到  
 基本的就是窗口切换(Ctrl+hjkl ↑↓←→)和tag切换(Alt+hl ←→)  
 这是配合nvim-tree和BufferLine插件使用的  
   
