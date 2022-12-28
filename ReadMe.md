@@ -21,3 +21,8 @@ lua >= 5.1
 ## LSP(未配置)  
 
 需要用到LSP可以在[nvim-lspconfig](https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md)配置相应语言的补全支持  
+  
+## test  
+
+![test.gif](./test.gif)  
+  
