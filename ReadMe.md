@@ -22,7 +22,7 @@ lua >= 5.1
 ## LSP(仅配置了lua)  
 
 需要用到LSP可以用两个插件相互配合  
-[lsp-server-install](https://github.com/williamboman/nvim-lsp-installer): 自动安装lsp server  
+[lsp-server-install](https://github.com/williamboman/nvim-lsp-installer): 自动安装lsp server(作者开发了一个新项目[mason.nvim](https://github.com/williamboman/mason.nvim)可以完全替代它，更推荐使用mason.nvim)  
 [nvim-lspconfig](https://github.com/neovim/nvim-lspconfig): 配置相应语言的补全支持  
 查看如何使用推荐知乎[*高效的程序员*的博客](https://zhuanlan.zhihu.com/p/444836713)  
 简单来说就是在[页面查看lsp-server](https://github.com/williamboman/nvim-lsp-installer#available-lsps)服务名字写入[setup.lua](./nvim/lua/lsp/setup.lua)以便自动安装  
