@@ -9,3 +9,5 @@ lua require('plugin-config/theme-nightfox')
 lua require('plugin-config/nvim-tree')
 lua require('plugin-config/bufferline')
 lua require('plugin-config/lualine')
+" lsp
+lua require('lsp/setup')
