@@ -1,19 +1,35 @@
-local lsp_installer = require "nvim-lsp-installer"
+-- :h mason-default-settings
+require("mason").setup({
+  ui = {
+    icons = {
+      package_installed = "✓",
+      package_pending = "➜",
+      package_uninstalled = "✗",
+    },
+  },
+})
 
--- 安装列表
--- https://github.com/williamboman/nvim-lsp-installer#available-lsps
--- { key: 语言 value: 配置文件 }
-local servers = {
-  sumneko_lua = require "lsp.lua", -- /lua/lsp/lua.lua
-}
+-- mason-lspconfig uses the `lspconfig` server names in the APIs it exposes - not `mason.nvim` package names
+-- https://github.com/williamboman/mason-lspconfig.nvim/blob/main/doc/server-mapping.md
+require("mason-lspconfig").setup({
+  -- 确保安装，根据需要填写
+  ensure_installed = {
+    "sumneko_lua",
+  --[[
+    "tsserver",
+    "tailwindcss",
+    "bashls",
+    "cssls",
+    "dockerls",
+    "emmet_ls",
+    "html",
+    "jsonls",
+    "pyright",
+    "rust_analyzer",
+    "taplo",
+    "yamlls",
+    "gopls",
+    ]]
+  },
+})
 
--- 自动安装 LanguageServers
-for name, _ in pairs(servers) do
-  local server_is_found, server = lsp_installer.get_server(name)
-  if server_is_found then
-    if not server:is_installed() then
-      print("Installing " .. name)
-      server:install()
-    end
-  end
-end

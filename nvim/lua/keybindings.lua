@@ -40,7 +40,7 @@ map("n", "sj", ":resize +10<CR>",opt)
 map("n", "sk", ":resize -10<CR>",opt)
 ]]
 
--- 使用 Ctrl + hjkl 在窗口之间跳转
+  -- 使用 Ctrl + hjkl 在窗口之间跳转
 map("n", "<C-h>", "<C-w>h", opt)
 map("n", "<C-j>", "<C-w>j", opt)
 map("n", "<C-k>", "<C-w>k", opt)
