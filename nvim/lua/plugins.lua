@@ -1,4 +1,4 @@
-return require('packer').startup(function()
+return require('packer').startup(function(use)
   -- Packer can manage itself
   use 'wbthomason/packer.nvim'
   -- theme (nightfox)
@@ -23,4 +23,6 @@ return require('packer').startup(function()
   use({'williamboman/mason-lspconfig.nvim'})
   -- lsp-config
   use({'neovim/nvim-lspconfig'})
+  -- DAP
+  use({'mfussenegger/nvim-dap'})
 end)

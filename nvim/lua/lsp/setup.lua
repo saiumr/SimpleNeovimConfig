@@ -15,6 +15,9 @@ require("mason-lspconfig").setup({
   -- 确保安装，根据需要填写
   ensure_installed = {
     "sumneko_lua",
+   -- "pyright",
+   -- "gopls",
+   -- "clangd",
   --[[
     "tsserver",
     "tailwindcss",
@@ -24,12 +27,36 @@ require("mason-lspconfig").setup({
     "emmet_ls",
     "html",
     "jsonls",
-    "pyright",
     "rust_analyzer",
     "taplo",
     "yamlls",
-    "gopls",
     ]]
   },
 })
 
+local lspconfig = require("lspconfig")
+
+-- 安装列表
+-- { key: 服务器名， value: 配置文件 }
+-- key 必须为下列网址列出的 server name，不可以随便写
+-- https://github.com/williamboman/nvim-lsp-installer#available-lsps
+local servers = {
+  sumneko_lua = require("lsp.config.lua"), -- lua/lsp/config/lua.lua
+  --[[
+  pyright = require("lsp.config.pyright"),
+  bashls = require("lsp.config.bash"),
+  html = require("lsp.config.html"),
+  cssls = require("lsp.config.css"),
+  emmet_ls = require("lsp.config.emmet"),
+  jsonls = require("lsp.config.json"),
+  tsserver = require("lsp.config.ts"),
+  rust_analyzer = require("lsp.config.rust"),
+  yamlls = require("lsp.config.yamlls"),
+  remark_ls = require("lsp.config.markdown"),
+  ]]
+}
+
+for name, _ in pairs(servers) do
+  -- 使用默认参数
+  lspconfig[name].setup({})
+end

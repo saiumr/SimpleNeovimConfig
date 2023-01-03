@@ -26,6 +26,8 @@ lua >= 5.1
 使用[mason.nvim](https://github.com/williamboman/mason.nvim)和[mason-lspconfig.nvim](https://github.com/williamboman/mason-lspconfig.nvim)：mason.nvim是lsp-server-install的升级版本，原项目已经不再更新了，mason.nvim更强大，更简单  
 使用[nvim-lspconfig](https://github.com/neovim/nvim-lspconfig): 相应语言的补全支持的配置  
   
+现在安装lsp只需要使用`:Mason`命令然后找到对应未安装的lsp按`i`键就可以安装了，也可以在[setup.lua](./nvim/lua/lsp/setup.lua)里面mason-lspconfig下的表里面写上需要的lsp-server自动安装，然后把对应语言lsp的配置文件如[lua.lua](nvim/lua/lsp/config/)放在lsp/config目录下即可  
+
 因为之前是使用lsp-server-install配置的lsp服务，可以按照掘金大佬[nshen的博客](https://juejin.cn/post/7154005621887631396)了解怎么迁移到mason.nvim，如果你之前没有使用过lsp-server-install，那么可以省略相应的迁移步骤  
 
 下面是之前推荐lsp-server-install插件时写的介绍（**注意：文件可能在更新之后已经不存在**）：  

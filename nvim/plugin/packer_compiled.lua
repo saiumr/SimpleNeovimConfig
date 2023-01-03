@@ -99,6 +99,11 @@ _G.packer_plugins = {
     path = "C:\\Users\\byosoft\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nightfox.nvim",
     url = "https://github.com/EdenEast/nightfox.nvim"
   },
+  ["nvim-dap"] = {
+    loaded = true,
+    path = "C:\\Users\\byosoft\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-dap",
+    url = "https://github.com/mfussenegger/nvim-dap"
+  },
   ["nvim-lspconfig"] = {
     loaded = true,
     path = "C:\\Users\\byosoft\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-lspconfig",
