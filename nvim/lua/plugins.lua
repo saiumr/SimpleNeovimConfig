@@ -35,4 +35,14 @@ return require('packer').startup(function(use)
   use({'rafamadriz/friendly-snippets'})
   -- lspkind
   use({'onsails/lspkind-nvim'})
+
+  -- neoscroll.nvim
+  use({'karb94/neoscroll.nvim'})
+  -- windows.nvim
+  use { "anuvyklack/windows.nvim",
+    requires = {
+      "anuvyklack/middleclass",
+      "anuvyklack/animation.nvim"
+    }
+  }
 end)
