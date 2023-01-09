@@ -70,9 +70,9 @@ local pluginKeys = {}
 pluginKeys.cmp = function(cmp)
   return {
     -- 上一个
-    ['<tab>'] = cmp.mapping.select_prev_item(),
+    ['<S-tab>'] = cmp.mapping.select_prev_item(),
     -- 下一个
-    ['<S-tab>'] = cmp.mapping.select_next_item(),
+    ['<tab>'] = cmp.mapping.select_next_item(),
     -- 出现补全
     ['<A-.>'] = cmp.mapping(cmp.mapping.complete(), { 'i', 'c' }),
     -- 取消
