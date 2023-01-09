@@ -11,3 +11,5 @@ lua require('plugin-config/bufferline')
 lua require('plugin-config/lualine')
 " lsp
 lua require('lsp/setup')
+" nvim-cmp
+lua require('lsp/nvim-cmp')

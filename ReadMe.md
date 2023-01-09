@@ -21,6 +21,8 @@ lua >= 5.1
   
 ## LSP(仅配置了lua)  
 
+### 静态检查  
+
 需要用到LSP可以用两个插件相互配合  
 ~~使用[lsp-server-install](https://github.com/williamboman/nvim-lsp-installer): 自动安装lsp server~~  
 使用[mason.nvim](https://github.com/williamboman/mason.nvim)和[mason-lspconfig.nvim](https://github.com/williamboman/mason-lspconfig.nvim)：mason.nvim是lsp-server-install的升级版本，原项目已经不再更新了，mason.nvim更强大，更简单  
@@ -35,6 +37,9 @@ lua >= 5.1
 简单来说就是在[页面查看lsp-server](https://github.com/williamboman/nvim-lsp-installer#available-lsps)服务名字写入[setup.lua](./nvim/lua/lsp/setup.lua)自动安装lsp-server  
 然后再在配置文件比如[lua.lua](./nvim/lua/lsp/lua.lua)里面使之生效（这个是安装的lua lsp server的配置文件）  
   
+### 代码补全  
+nvim-cmp插件和快捷键配置，参考[Neovim 内置 LSP 配置 (二)：自动代码补全](https://zhuanlan.zhihu.com/p/445331508)  
+
 ## test  
 
 ![test.gif](./test.gif)  
