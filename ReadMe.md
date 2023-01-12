@@ -41,10 +41,11 @@ lua >= 5.1
 
 nvim-cmp插件和快捷键配置，参考[Neovim 内置 LSP 配置 (二)：自动代码补全](https://zhuanlan.zhihu.com/p/445331508)  
 
-## 动画
+## 动画（这个内容不必太在意）
 
 两个显示动画插件，使用更丝滑，另外更改了补全使用的快捷键  
 [neoscroll.nvim](https://github.com/karb94/neoscroll.nvim)和[windows.nvim](https://github.com/anuvyklack/windows.nvim)  
+使用ctrl u d, zz, zb, zt, ctrl _ | = z
 
 ## test  
 

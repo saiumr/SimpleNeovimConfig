@@ -70,9 +70,9 @@ local pluginKeys = {}
 pluginKeys.cmp = function(cmp)
   return {
     -- 上一个
-    ['<S-tab>'] = cmp.mapping.select_prev_item(),
+    ['<S-tab>'] = cmp.mapping(cmp.mapping.select_next_item(), { 'i', 'c' }),
     -- 下一个
-    ['<tab>'] = cmp.mapping.select_next_item(),
+    ['<Tab>'] = cmp.mapping(cmp.mapping.select_next_item(), { 'i', 'c' }),  -- use tab select item for mode insert and command
     -- 出现补全
     ['<A-.>'] = cmp.mapping(cmp.mapping.complete(), { 'i', 'c' }),
     -- 取消
