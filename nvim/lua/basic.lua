@@ -11,7 +11,7 @@ vim.wo.number = true
 vim.wo.relativenumber = true
 
 -- highlight current line
---vim.wo.cursorline = true
+  vim.wo.cursorline = true
 
 -- highlight leftside column
 --vim.wo.signcolumn = "yes"

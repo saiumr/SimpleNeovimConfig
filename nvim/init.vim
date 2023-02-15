@@ -11,6 +11,7 @@ lua require('plugin-config/bufferline')
 lua require('plugin-config/lualine')
 lua require('plugin-config/neoscroll')
 lua require('plugin-config/windows')
+lua require('plugin-config/nvim-comment')
 " lsp
 lua require('lsp/setup')
 " nvim-cmp

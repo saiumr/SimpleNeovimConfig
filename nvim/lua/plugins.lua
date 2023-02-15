@@ -45,4 +45,7 @@ return require('packer').startup(function(use)
       "anuvyklack/animation.nvim"
     }
   }
+  -- Quickly Comment
+  use 'terrortylor/nvim-comment'
+
 end)
