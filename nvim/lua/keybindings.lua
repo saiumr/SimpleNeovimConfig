@@ -70,7 +70,7 @@ local pluginKeys = {}
 pluginKeys.cmp = function(cmp)
   return {
     -- 上一个
-    ['<S-tab>'] = cmp.mapping(cmp.mapping.select_next_item(), { 'i', 'c' }),
+    ['<S-tab>'] = cmp.mapping(cmp.mapping.select_prev_item(), { 'i', 'c' }),
     -- 下一个
     ['<tab>'] = cmp.mapping(cmp.mapping.select_next_item(), { 'i', 'c' }),
     -- 出现补全
