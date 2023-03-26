@@ -47,5 +47,10 @@ return require('packer').startup(function(use)
   }
   -- Quickly Comment
   use 'terrortylor/nvim-comment'
+  -- Sytanx Highlight
+  use {
+    'nvim-treesitter/nvim-treesitter',
+    run = ':TSUpdate'
+  }
 
 end)

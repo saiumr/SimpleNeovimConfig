@@ -12,7 +12,9 @@ lua require('plugin-config/lualine')
 lua require('plugin-config/neoscroll')
 lua require('plugin-config/windows')
 lua require('plugin-config/nvim-comment')
+lua require('plugin-config/nvim-treesitter')
 " lsp
 lua require('lsp/setup')
 " nvim-cmp
 lua require('lsp/nvim-cmp')
+
